@@ -81,7 +81,7 @@ The solution is implemented using **two independent modeling pipelines**, reflec
 ## Repository Structure
 ```
 
-├── data.zip                  # Zipped dataset downloaded from Kaggle
+├── the-ancient-texts-provenance-input-data.zip                  # Zipped dataset downloaded from Kaggle
 ├── code.ipynb            # End-to-end experimentation notebook
 └── README.md
 
