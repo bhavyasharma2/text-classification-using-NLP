@@ -1,10 +1,10 @@
-# 🏛️ Ancient Inscription Provenance Classification
+# Ancient Inscription Provenance Classification
 
 > Multilingual NLP pipeline for classifying historical inscriptions by geographic origin — combining character-level TF-IDF, LightGBM, and a fine-tuned XLM-RoBERTa transformer.
 
 ---
 
-## 📌 Overview
+## Overview
 
 This project tackles **text provenance detection on ancient historical inscriptions** — a challenging, low-resource NLP problem where the writing style, script patterns, and character n-grams carry the signal, not modern semantics.
 
@@ -12,7 +12,7 @@ The pipeline was built and evaluated on a dataset of **~120,000 labelled inscrip
 
 ---
 
-## 🧠 Problem
+## Problem
 
 Given a short text snippet from an ancient inscription, predict its **geographic/cultural provenance** (multi-class classification across 15 categories). Challenges include:
 
@@ -23,7 +23,7 @@ Given a short text snippet from an ancient inscription, predict its **geographic
 
 ---
 
-## 🏗️ Pipeline Architecture
+## Pipeline Architecture
 
 ```
 Raw Text
@@ -39,7 +39,7 @@ XLM-RoBERTa is pre-trained on 100+ languages with a large multilingual SentenceP
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 ├── notebook.ipynb          # Full training pipeline (Kaggle)
@@ -50,7 +50,7 @@ XLM-RoBERTa is pre-trained on 100+ languages with a large multilingual SentenceP
 
 ---
 
-## ⚙️ Methodology
+## Methodology
 
 ### Stage 1 — Baseline: TF-IDF + LightGBM
 
@@ -70,7 +70,7 @@ XLM-RoBERTa is pre-trained on 100+ languages with a large multilingual SentenceP
 
 ---
 
-## 📊 Results
+## Results
 
 | Model | Macro-F1 |
 |---|---|
@@ -83,7 +83,7 @@ XLM-RoBERTa is pre-trained on 100+ languages with a large multilingual SentenceP
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Tool | Purpose |
 |---|---|
@@ -96,7 +96,7 @@ XLM-RoBERTa is pre-trained on 100+ languages with a large multilingual SentenceP
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 1. Clone the repo and open `notebook.ipynb` in a Kaggle or GPU-enabled environment
 2. Place the dataset CSVs in `/kaggle/input/the-ancient-texts-provenance-challenge/`
@@ -114,7 +114,7 @@ sentencepiece
 
 ---
 
-## 📝 Key Takeaways
+## Key Takeaways
 
 - Character-level features are surprisingly competitive for ancient/historical text — reaching 0.39 F1 with zero fine-tuning
 - XLM-RoBERTa's multilingual pretraining generalizes well even to ancient scripts it was never explicitly trained on
